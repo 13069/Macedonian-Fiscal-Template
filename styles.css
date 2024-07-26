@@ -1,0 +1,320 @@
+body {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 0.2cm;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    line-height: 1;
+}
+
+.receipt {
+    width: 5.5cm;
+    padding: 0.3cm;
+	padding-top: 1.5cm;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+button.save-button {
+    font-size: 0.15cm;
+    padding: 0.2cm 0.5cm;
+    cursor: pointer;
+    margin-top: 20px;
+    display: block;
+}
+
+.header, .items, .totals, .footer {
+    text-align: center;
+    margin: 0;
+}
+
+.header p, .items p, .totals p {
+    margin: 5px 0;
+    font-size: 0.2cm;
+    letter-spacing: 0.02cm;
+}
+
+.separator {
+    border-top: 1px dashed #000;
+    margin: 10px 0;
+}
+
+.qr-code {
+    width: 2.5cm;
+    height: 2.5cm;
+    margin: 10px auto 0; /* Adjusted margin to remove top margin */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#datamatrix-code {
+    width: 2.4cm !important;
+    height: 2.4cm !important;
+}
+
+.date-time {
+    text-align: right;
+    margin: 0; /* Set margin to 0 for all sides */
+    margin-bottom: 10px; /* Keep bottom margin as 10px */
+}
+
+.footer-note {
+    text-align: center;
+}
+
+.footer-note p {
+    margin: 5px 0;
+    font-size: 0.2cm;
+    letter-spacing: 0.02cm;
+}
+
+.item-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.2cm;
+    letter-spacing: 0.02cm;
+    margin-top: 0; /* Remove the top margin */
+}
+
+.item-row .item {
+    text-align: left;
+}
+
+.item-row .price {
+    text-align: right;
+}
+
+.right-align {
+    text-align: right;
+}
+
+.image-and-code {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.image-placeholder {
+    width: 2.45cm;
+    margin-left: 10px; /* Adjust the right margin as needed */
+    height: 1.15cm;
+    background-image: url('https://i.ibb.co/YpZ50pM/76.png');
+    background-size: cover;
+}
+
+.codes {
+    text-align: right;
+    margin-right: 0.4cm;
+    padding-left: 0.4cm;
+    font-size: 0.2cm;
+    line-height: 1.2;
+}
+
+.codes p {
+    margin-bottom: 10px; /* Add a bottom margin of 5px */
+}
+
+
+.dashed-line {
+    border-bottom: 1px dashed #000;
+    margin: 5px 0;
+}
+
+.random-numbers {
+    font-size: 0.2cm;
+    text-align: left;
+    display: block;
+    margin: 0;
+    padding-left: 0;
+}
+
+.random-numbers-container {
+    
+    align-items: center;
+}
+
+.bold-large {
+    font-size: 0.2cm;
+    font-weight: bold;
+}
+
+.spacer {
+    flex-grow: 1;
+}
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+body {
+    background: #f5f5f5;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    line-height: normal;
+}
+
+a,
+a:visited {
+    color: #fff;
+    outline: none;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus,
+a:visited:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.container {
+    position: relative;
+    max-width: 768px;
+    margin: 5% auto;
+    padding: 60px 30px 30px 30px;
+    background: #fff;
+    color: #95a5a6;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1em;
+    line-height: normal;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.03);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+}
+
+.container h1,
+.container h2 {
+    display: block;
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 2rem;
+    font-weight: 700;
+    color: #aaa;
+}
+
+.container h2 {
+    margin-top: 30px;
+}
+
+/* Container for the button and help-tip */
+.button-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px; /* Adjust as needed */
+}
+
+/* Adjust styles for the save button */
+button.save-button {
+  font-size: 0.15cm;
+  padding: 0.2cm 0.5cm;
+  cursor: pointer;
+  display: block;
+  margin: 0; /* Remove margin to ensure proper alignment */
+}
+
+/* Default styles for help-tip */
+.help-tip {
+  margin-left: 10px; /* Space between the button and the help-tip */
+  text-align: center;
+  background-color: #29b6f6;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  font-size: 12px;
+  line-height: 26px;
+  cursor: default;
+  position: relative; /* Make it relative for absolute positioning of the tooltip */
+  transition: all 0.5s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+/* Hover effects */
+.help-tip:hover {
+  cursor: pointer;
+  background-color: #ccc;
+}
+
+.help-tip:before {
+  content: '?';
+  font-weight: 700;
+  color: #fff;
+}
+
+.help-tip p {
+  visibility: hidden;
+  opacity: 0;
+  text-align: left;
+  background-color: #039be5;
+  padding: 20px;
+  width: 300px;
+  position: absolute;
+  border-radius: 4px;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%) scale(0.7); /* Center the tooltip and scale it */
+  color: #fff;
+  font-size: 13px;
+  line-height: normal;
+}
+
+.help-tip:hover p {
+  cursor: default;
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%, -50%) scale(1.0); /* Keep centered and scale it to normal size */
+}
+
+.help-tip p:before {
+  position: absolute;
+  content: '';
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-bottom-color: #039be5;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -12px;
+}
+
+.help-tip p:after {
+  width: 100%;
+  height: 40px;
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+}
+
+.help-tip a {
+  color: #fff;
+  font-weight: 700;
+}
+
+.help-tip a:hover,
+.help-tip a:focus {
+  color: #fff;
+  text-decoration: underline;
+}
+
+/* Styles for small screens (mobile) */
+@media (max-width: 600px) {
+  .button-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .help-tip {
+    margin-left: 0; /* Reset margin */
+    margin-top: 10px; /* Space above the help-tip */
+  }
+}
+
+/*"Оваа скрипта е разработена исклучиво за образовни цели и не треба да се користи за стварни трговски или финансиски трансакции. Лицето што го користи овој код треба да биде свесно дека авторот, Леонид Крстевски, не презема никаква одговорност за било какви грешки или штети што можат да произлезат од употребата на оваа скрипта. Во случај на примена во стварни ситуации, корисникот треба да ја разгледа одговарајучата легислатива и да се консултира со правни или финансиски стручњаци пред да преземе било какви акции."

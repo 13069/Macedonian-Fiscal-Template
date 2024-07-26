@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фискална Сметка Бета Верзија</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bwip-js/dist/bwip-js.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+</head>
+<body>
+    <div class="receipt">
+        <div class="header">
+            <p class="bold-large" contenteditable="true" id="receiptTitle" style="font-size: 0.3cm; transform: scaleX(1.2); margin-right: 0.8cm; margin-left: 1cm;">ФИСКАЛНА СМЕТКА</p>
+            <p class="bold-large" contenteditable="true" id="receiptNumber" style="font-size: 0.3cm; transform: scaleX(1.2); margin-right: 2.3cm; margin-left: 2cm;">#0000</p>
+            <p contenteditable="true" id="companyName">ИМЕ НА ФИРМА</p>
+            <p contenteditable="true" id="companyAddress">АДРЕСА НА ФИРМА</p>
+            <p contenteditable="true" id="storeBranch">БРАНША НА ФИРМА</p>
+            <p contenteditable="true" id="customerId">БРОЈ НА ФИРМА</p>
+            <p contenteditable="true" id="taxNumber">13 ЦИФРЕН ДАНОЧЕН БРОЈ</p>
+            <p contenteditable="true" id="vatNumber">15 ЦИФРЕН ДДВ БРОЈ (2БУКВИ И 13БРОЈКИ)</p>
+        </div>
+        <div class="items">
+            <div class="item-row">
+                <span contenteditable="true" class="item">ПРОИЗВОД И КОЛИЧИНА</span>
+                <span contenteditable="true" class="price">0,00 Б</span>
+            </div>
+            <div class="item-row">
+                <span contenteditable="true" class="item">ПРОИЗВОД И КОЛИЧИНА</span>
+                <span contenteditable="true" class="price">0,00 А</span>
+            </div>
+            <div class="item-row">
+                <span contenteditable="true" class="item">ПРОИЗВОД И КОЛИЧИНА</span>
+                <span contenteditable="true" class="price">0,00 В</span>
+            </div>
+            <div class="item-row">
+                <span contenteditable="true" class="item">ПРОИЗВОД И КОЛИЧИНА</span>
+                <span contenteditable="true" class="price">0,00 Б</span>
+            </div>
+            <div class="item-row">
+                <span contenteditable="true" class="item">ПРОИЗВОД И КОЛИЧИНА</span>
+                <span contenteditable="true" class="price">0,00 А</span>
+            </div>
+            <div class="item-row">
+                <span contenteditable="true" class="item">ПРОИЗВОД И КОЛИЧИНА</span>
+                <span contenteditable="true" class="price">0,00 А</span>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="totals">
+            <div class="item-row" contenteditable="true">
+                <span contenteditable="true" class="item">ПРОМЕТ ОД МАКЕДОНСКИ ПР.</span>
+                <span contenteditable="true" class="price">0,00</span>
+            </div>
+            <div class="item-row" contenteditable="true">
+                <span contenteditable="true" class="item">ВКУПНО ДДВ А=18.00%</span>
+                <span contenteditable="true" class="price">0,00</span>
+            </div>
+            <div class="item-row" contenteditable="true">
+                <span contenteditable="true" class="item">ВКУПНО ДДВ Б=5.00%</span>
+                <span contenteditable="true" class="price">0,00</span>
+            </div>
+            <div class="item-row" contenteditable="true">
+                <span contenteditable="true" class="item">ВКУПНО ДДВ В=10.00%</span>
+                <span contenteditable="true" class="price">0,00</span>
+            </div>
+            <div class="item-row" contenteditable="true">
+                <span contenteditable="true" class="item">ВКУПНО ДДВ Г=0.00%</span>
+                <span contenteditable="true" class="price">0,00</span>
+            </div>
+            <div class="item-row" contenteditable="true">
+                <span contenteditable="true" class="item">ВКУПНО ДДВ</span>
+                <span contenteditable="true" class="price">0,00</span>
+            </div>
+        </div>
+        <div class="separator"></div>
+        <div class="totals">
+            <div class="item-row" contenteditable="true">
+                <span class="item"><b>ВКУПЕН ПРОМЕТ</b></span>
+                <span class="price"><b>0,00</b></span>
+            </div>
+            <div class="item-row" contenteditable="true">
+                <span contenteditable="true" class="item">ВКУПНО ДДВ</span>
+                <span contenteditable="true" class="price">0,00</span>
+            </div>
+            <div class="item-row" contenteditable="true">
+                <span contenteditable="true" class="item">ВКУПНО ДДВ А=18.00%</span>
+                <span contenteditable="true" class="price">0,00</span>
+            </div>
+            <div class="item-row" contenteditable="true">
+                <span contenteditable="true" class="item">ВКУПНО ДДВ Б=5.00%</span>
+                <span contenteditable="true" class="price">0,00</span>
+            </div>
+            <div class="item-row" contenteditable="true">
+                <span contenteditable="true" class="item">ВКУПНО ДДВ В=10.00%</span>
+                <span contenteditable="true" class="price">0,00</span>
+            </div>
+            <div class="item-row" contenteditable="true">
+                <span contenteditable="true" class="item">ВКУПНО ДДВ Г=0.00%</span>
+                <span contenteditable="true" class="price">0,00</span>
+            </div>
+            <div class="separator"></div>
+            <div class="item-row" contenteditable="true">
+                <span class="item">ВО ГОТОВО</span>
+                <span class="price">0,00</span>
+            </div>
+            <div class="spacer"></div>
+            <div class="qr-code">
+                <canvas id="datamatrix-code" width="128" height="128"></canvas>
+            </div>
+            <div class="item-row">
+                <div class="random-numbers-container">
+                    <p class="random-numbers">2802230</p>
+                </div>
+                <div class="date-time" contenteditable="true">
+                    <p>ДАТУМ 01-01-2001 ЧАС 01:01:01</p>
+                </div>
+            </div>
+            <div class="image-and-code">
+                <div class="image-placeholder"></div>
+                <div class="codes">
+                    <p class="right-align" style="font-weight: bold; font-size: 0.2cm;"><b>VB587781255</b></p>
+                    <p class="right-align" style="font-weight: bold; font-size: 0.2cm;"><b>VB587781255</b></p>
+                </div>
+            </div>
+            <div class="footer-note">
+                <p class="bold-large" contenteditable="true" id="receiptTitle" style="font-size: 0.3cm; transform: scaleX(1.2); margin-right: 0.8cm; margin-left: 1cm;">ФИСКАЛНА СМЕТКА</p>
+                <div class="dashed-line"></div>
+                <p class="random-numbers">2802230</p>
+            </div>
+        </div>
+    </div>
+    <div class="button-container">
+  <button onclick="saveReceipt()" class="save-button">Зачувај</button>
+  <div class="help-tip">
+    <p>Кликни на делот кој што сакаш да го смениш или избришеш. За додавање кликни на последниот производ и кликни на ентер.</p>
+  </div>
+</div>
+    <script src="script.js"></script>
+</body>
+</html>
+
+<!-- "Оваа скрипта е разработена исклучиво за образовни цели и не треба да се користи за стварни трговски или финансиски трансакции. Лицето што го користи овој код треба да биде свесно дека авторот, Леонид Крстевски, не презема никаква одговорност за било какви грешки или штети што можат да произлезат од употребата на оваа скрипта. Во случај на примена во стварни ситуации, корисникот треба да ја разгледа одговарајучата легислатива и да се консултира со правни или финансиски стручњаци пред да преземе било какви акции." -->

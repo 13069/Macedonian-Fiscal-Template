@@ -1,0 +1,55 @@
+1. За да работи овој проект, потребно е да имате 3 фајлови:
+- index
+- script
+- styles
+!Овие фајлови треба да се ЗАЕДНО во еден фолдер!
+
+2. Двоен клик на index за стартување на проектот.
+
+3. Со кликање на текстот, можете да уредувате, бришете и додавате производ.
+
+4. Кога ќе завршите со уредување на фискалната, кликнете на копчето "Зачувај".
+
+5. Со секој "F5" или "Refresh", се менува QR-кодот и броевите подолу.
+
+6. Иконата со прашалник е бонус ориентација за користење.
+
+- Бришење се прави со кликање на тоа што сакате да го избришете и копчето "Delete"
+- Додавање се прави со двоен клик на последниот производ, позиционирање на крај и копчето "Enter" (истото се прави и со цената).
+- Уредување се прави со двоен клик на тоа што сакате да го промените.
+
+
+
+Овој проект е Бета верзија, за едукативна употреба и не е поддржан од УЈП или други државни институции.
+
+Проектот е создаден од Леонид Крстевски.
+
+За повеќе проекти отворете го линкот: https://github.com/l3069
+
+\--------------------------------------------------------------------------------------------------------\
+
+1. Za da go izvršite ovoj proekt, potrebni vi se 3 datoteki:
+- indeks
+- skripta
+- stilovi
+!!!
+
+2. Dvoen klik na indeksot za da započne proektot.
+
+3. So kliknuvanje na tekstot, možete da go ureduvate, brišete i dodavate proizvodot.
+
+4. Koga ḱe završite so fiskalnoto prilagoduvanje, kliknete na kopčeto „Začuvaj“.
+
+5. So sekoe „F5“ ili „Refresh“, QR-kodovite i broevite podolu se menuvaat.
+
+6. Ikonata so prašalnik e bonus orientacija za upotreba.
+
+- Izbrišete so kliknuvanje na ona što sakate da go izbrišete i kopčeto „Izbriši“.
+- Dodavanjeto se vrši so dvoen klik na posledniot proizvod, pozicioniranje na krajot i pritiskanje na kopčeto „Enter“ (istoto se pravi i so cenata).
+- Uredete so dvoen klik na ona što sakate da go promenite.
+
+
+
+Ovoj proekt e beta verzija, za edukativna upotreba i ne e poddržan od Ukraina ili drugi državni institucii.
+
+Proektot go kreiraše Leonid Krstevski.

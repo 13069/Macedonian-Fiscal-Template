@@ -1,0 +1,27 @@
+1. To run this project, you need 3 files:
+- index
+- script
+- styles
+!!!
+
+2. Double click on the index to start the project.
+
+3. By clicking on the text, you can edit, delete and add the product.
+
+4. When you are done with the fiscal adjustment, click on the "Save" button.
+
+5. With each "F5" or "Refresh", the QR-codes and numbers below change.
+
+6. The icon with the question mark is a bonus orientation for use.
+
+- Delete by clicking on what you want to delete and the "Delete" button
+- Adding is done by double-clicking on the last product, positioning at the end and pressing the "Enter" button (the same is done with the price).
+- Edit with double click on what you want to change.
+
+
+
+This project is a Beta version, for educational use, and is not supported by Ukraine or other state institutions.
+
+The project was created by Leonid Krstevski.
+
+For more projects, open the link: https://github.com/l3069
